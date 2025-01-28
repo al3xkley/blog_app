@@ -60,6 +60,12 @@ a {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .wrapper {
     max-width: 475px;
