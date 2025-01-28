@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import styles from "./navbar.module.css";
 import Link from "next/link";
-import Thememode from "../ui/themetoggle/Thememode";
+import Thememode from "../ui/themetoggle/Themetoggle";
+import AuthLinks from "../authLinks/AuthLinks";
 
 export default function Navbar() {
   return (
@@ -16,10 +17,16 @@ export default function Navbar() {
 
       <div className={styles.links}>
         <Thememode />
-        <Link href="/">Home Page</Link>
-        <Link href="/">Contact</Link>
-        <Link href="/">About Page</Link>
-        <Link href="/">Login</Link>
+        <Link href="/" className={styles.link}>
+          HomePage
+        </Link>
+        <Link href="/" className={styles.link}>
+          Contact
+        </Link>
+        <Link href="/" className={styles.link}>
+          About
+        </Link>
+        <AuthLinks />
       </div>
     </div>
   );
