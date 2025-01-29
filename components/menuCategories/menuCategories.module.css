@@ -1,0 +1,37 @@
+.categoryList {
+  margin-top: 35px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categoryItem {
+  padding: 10px 35px;
+  border-radius: 30px;
+  font-size: 14px;
+  min-width: 150px;
+  text-align: center;
+}
+
+.categoryItem.cuisine {
+  background-color: #0e5590;
+}
+.categoryItem.culture {
+  background-color: lightpink;
+}
+
+.categoryItem.architecture {
+  background-color: #77878b;
+}
+
+.categoryItem.people {
+  background-color: #fbb13c;
+}
+.categoryItem.history {
+  background-color: lightseagreen;
+}
+
+.categoryItem.sights {
+  background-color: lightslategrey;
+}

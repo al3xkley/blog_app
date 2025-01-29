@@ -23,19 +23,19 @@
   border-radius: 30px;
 }
 
-.category.food {
-  background-color: #57c4ff31;
+.category.cuisine {
+  background-color: #0e5590;
 }
 .category.culture {
   background-color: lightpink;
 }
 
 .category.architecture {
-  background-color: lightcyan;
+  background-color: #77878b;
 }
 
 .category.people {
-  background-color: lightsalmon;
+  background-color: #fbb13c;
 }
 .category.history {
   background-color: lightseagreen;

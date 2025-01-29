@@ -10,7 +10,7 @@ export default function Categorylist() {
       <div className={styles.categories}>
         <Link
           href="/blog?cat=style"
-          className={`${styles.category} ${styles.food}`}
+          className={`${styles.category} ${styles.cuisine}`}
         >
           <Image
             src="/food.png"
