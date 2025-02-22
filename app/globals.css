@@ -85,3 +85,12 @@ a {
     font-size: 14px;
   }
 }
+
+.ql-container {
+  font-size: 28px !important;
+  padding: 30px;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  color: #b3b3b1;
+}

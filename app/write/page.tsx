@@ -7,32 +7,32 @@ import ReactQuill from "react-quill-new";
 import "react-quill/dist/quill.bubble.css";
 
 export default function Writepage() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
   const [value, setValue] = useState<string>("");
   return (
     <div className={styles.container}>
-      <input type="text" placeholder="Title" />
+      <input className={styles.input} type="text" placeholder="Title" />
       <div className={styles.editor}>
-        <button className={styles.button}>
-          <Image src="/plus.png" alt="plus img" width={16} height={16} />
+        <button className={styles.button} onClick={() => setOpen(!open)}>
+          <Image src="/plus.png" alt="plusimg" width={16} height={16} />
         </button>
         {open && (
-          <div className={styles.addPanel}>
-            <button className={styles.button}>
-              <Image src="/image.png" alt="add img" width={16} height={16} />
+          <div className={styles.add}>
+            <button className={styles.addButton}>
+              <Image src="/image.png" alt="addimglink" width={16} height={16} />
             </button>
-            <button className={styles.button}>
+            <button className={styles.addButton}>
               <Image
                 src="/external.png"
-                alt="add link img"
+                alt="addlinkimg"
                 width={16}
                 height={16}
               />
             </button>
-            <button className={styles.button}>
+            <button className={styles.addButton}>
               <Image
                 src="/video.png"
-                alt="add video img"
+                alt="addvideoimg"
                 width={16}
                 height={16}
               />
@@ -40,12 +40,14 @@ export default function Writepage() {
           </div>
         )}
         <ReactQuill
+          className={styles.textArea}
           theme="bubble"
           value={value}
           onChange={setValue}
-          placeholder="tell your story"
+          placeholder="Tell your story..."
         />
       </div>
+      <button className={styles.publish}>Publish</button>
     </div>
   );
 }
