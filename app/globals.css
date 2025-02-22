@@ -5,15 +5,18 @@
   --softTextColor: #626262;
 }
 
-* {
+/* * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
-}
+  margin: 0;
+} */
 
 body {
   max-width: 100wh;
   overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -69,5 +72,16 @@ a {
 @media screen and (max-width: 640px) {
   .wrapper {
     max-width: 475px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .wrapper {
+    max-width: 310px;
+  }
+
+  .socialButton {
+    font-weight: 400;
+    font-size: 14px;
   }
 }

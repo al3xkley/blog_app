@@ -13,13 +13,7 @@ export default function MenuPosts({
       <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image
-              src="/p1.jpeg"
-              alt={""}
-              className={styles.image}
-              width={80}
-              height={80}
-            />
+            <Image src="/p1.jpeg" alt={""} className={styles.image} fill />
           </div>
         )}
         <div className={styles.textContainer}>
@@ -38,13 +32,7 @@ export default function MenuPosts({
       <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image
-              src="/p1.jpeg"
-              alt={""}
-              className={styles.image}
-              width={80}
-              height={80}
-            />
+            <Image src="/p1.jpeg" alt={""} className={styles.image} fill />
           </div>
         )}
         <div className={styles.textContainer}>
@@ -63,13 +51,7 @@ export default function MenuPosts({
       <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image
-              src="/p1.jpeg"
-              alt={""}
-              className={styles.image}
-              width={80}
-              height={80}
-            />
+            <Image src="/p1.jpeg" alt={""} className={styles.image} fill />
           </div>
         )}
         <div className={styles.textContainer}>
@@ -84,13 +66,7 @@ export default function MenuPosts({
       <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image
-              src="/p1.jpeg"
-              alt={""}
-              className={styles.image}
-              width={80}
-              height={80}
-            />
+            <Image src="/p1.jpeg" alt={""} className={styles.image} fill />
           </div>
         )}
         <div className={styles.textContainer}>

@@ -3,14 +3,14 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./authLinks.module.css";
+export type AuthStatus = "authorized" | "notauthorized";
+const status: AuthStatus = "authorized";
 
 export default function AuthLinks() {
   const [open, setOpen] = useState(false);
-
-  const status = "not authorized";
   return (
     <>
-      {status === "not authorized" ? (
+      {status === "notauthorized" ? (
         <Link href="/login" className={styles.link}>
           Login
         </Link>
@@ -32,7 +32,7 @@ export default function AuthLinks() {
           <Link href="/">Home</Link>
           <Link href="/">About</Link>
           <Link href="/">Contact</Link>
-          {status === "not authorized" ? (
+          {status === "notauthorized" ? (
             <Link href="/login">Login</Link>
           ) : (
             <>
